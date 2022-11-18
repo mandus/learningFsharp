@@ -20,6 +20,6 @@ module PigLatin =
 [<EntryPoint>]
 let main args = 
     for arg in args do
-        let pigArg = PigLatin.toPigLatin args
+        let pigArg = PigLatin.toPigLatin arg
         printfn "%s in Pig Latin is: %s" arg pigArg
     0 // Need to end with a zero (or some other int) since main should return int.
